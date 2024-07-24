@@ -46,6 +46,13 @@ return {
 			keymap.set("n", "L", vsplit_preview, opts("Vsplit Preview"))
 			keymap.set("n", "h", api.node.navigate.parent_close, opts("Close"))
 			keymap.set("n", "H", api.tree.collapse_all, opts("Collapse All"))
+			keymap.set("n", "n", api.fs.create, opts("Create New"))
+			keymap.set("n", "r", api.fs.rename, opts("Rename Node"))
+			keymap.set("n", "d", api.fs.remove, opts("Remove Node"))
+			keymap.set("n", "y", api.fs.copy.node, opts("Copy Node"))
+			keymap.set("n", "x", api.fs.cut, opts("Cut Node"))
+			keymap.set("n", "p", api.fs.paste, opts("Paste Node"))
+			keymap.set("n", "?", api.tree.toggle_help, opts("Toggle Help"))
 		end
 
 		-- recommended settings from nvim-tree documentation
