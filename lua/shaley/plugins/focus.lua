@@ -5,6 +5,9 @@ return {
 		local focus = require("focus")
 
 		focus.setup({
+			autoresize = {
+				enable = false,
+			},
 			ui = {
 				hybridnumber = true,
 				withhighlight = true,
