@@ -1,5 +1,8 @@
 return {
 	"matbme/JABS.nvim",
+	keys = {
+		{ "<leader>bb", "<cmd>JABSOpen<CR>", desc = "Open buffer switcher (JABS)" },
+	},
 	config = function()
 		local jabs = require("jabs")
 
@@ -69,9 +72,5 @@ return {
 			-- Whether to use nvim-web-devicons next to filenames
 			use_devicons = false, -- true or false. Default true
 		})
-
-		local keymap = vim.keymap -- for conciseness
-
-		keymap.set("n", "<leader>bb", "<cmd>JABSOpen<CR>", { desc = "Open buffer switcher (JABS)" })
 	end,
 }

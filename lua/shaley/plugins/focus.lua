@@ -1,6 +1,13 @@
 return {
 	"nvim-focus/focus.nvim",
 	version = "*",
+	keys = {
+		{ "<leader>wh", "<cmd>FocusSplitLeft<CR>", desc = "Focus left split" },
+		{ "<leader>wl", "<cmd>FocusSplitRight<CR>", desc = "Focus right split" },
+		{ "<leader>wj", "<cmd>FocusSplitDown<CR>", desc = "Focus below split" },
+		{ "<leader>wk", "<cmd>FocusSplitUp<CR>", desc = "Focus above split" },
+		{ "<leader>ww", "<cmd>FocusSplitNicely<CR>", desc = "Split nicely" },
+	},
 	config = function()
 		local focus = require("focus")
 
