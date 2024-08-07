@@ -4,6 +4,11 @@ return {
 	config = function()
 		local colorizer = require("colorizer")
 
-		colorizer.setup({})
+		colorizer.setup({
+			"css",
+			typescript = {
+				rgb_fn = true,
+			},
+		})
 	end,
 }
